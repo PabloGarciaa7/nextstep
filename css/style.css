@@ -1,0 +1,138 @@
+body{
+    font-family: arial,sans-serif;
+}
+
+.aumento:hover{
+  transform: scale(1.02);
+  box-shadow: 5px 10px 18px #888888;
+}
+
+/*-----Header-----*/
+.header {
+  background-color: rgb(106, 159, 205);
+}
+
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: black;
+}
+
+.incio{
+  width: 100%;
+  height: auto;
+}
+
+/* contenedor*/
+h1,h2{
+  text-align: center;
+}
+h1{
+  font-size: 50px;
+}
+
+h3{
+  font-size: 30px;
+  padding-left: 40px;
+}
+/* anmuncio restaurantes */
+.anuncio{
+  border-radius: 15px;
+  background-color: rgb(106, 205, 164);
+  margin: 15px 200px;
+  padding: 5px 5px;
+ }
+
+.anuncio > ul {
+  display: flex;
+}
+
+.anuncio > ul > li{
+  flex: 1;
+  margin: 10px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.verMas{
+  margin-top: 50px;
+}
+.verMas > a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+ .anuncio > ul>li>img{
+  width: 600px;
+ }
+/* anuncio lugares */
+.anuncio2{
+  border-radius: 15px;
+  background-color: rgb(211, 198, 142);
+  margin: 10px 200px;
+  padding: 5px 5px;
+ }
+
+.anuncio2 > ul {
+  display: flex;
+}
+
+.anuncio2 > ul > li{
+  flex: 1;
+  margin: 10px;
+  font-size: 20px;
+  list-style: none;
+}
+
+ .anuncio2 > ul>li>img{
+  width: 600px;
+ }
+ 
+/* Pagina restaurantes */
+/*-----Restaurantes-----*/
+.contenedor > ul {
+  display: flex;
+}
+.restaurantes {
+  border-radius: 5%;
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+}
+.imagen{
+  width: auto;
+  height: 150px;
+}
+.cocina{
+  color: rgb(69, 119, 167);
+}
+/*-----Mas lugares-----*/
+.lugares >ul{
+    display: flex;
+}
+/*-----Footer-----*/
+footer{
+  margin-top: 15px;
+  background-color: rgb(106, 159, 205);
+}
+
+footer > div {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  padding: 10px;
+  
+}
+
+.logo{
+  width: auto;
+  height: 300px;
+}
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NextStep</title>
+  </head>
+  <body>
+
+    <div class="header container-fluid py-3">
+      <div class="row justify-content-evenly text-center">
+        <div class="col-3">
+          <a href="index.html" class="link">Inicio</a>
+        </div>
+        <div class="col-3">
+          <a href="restaurantes.html" class="link">Restaurantes</a>
+        </div>
+        <div class="col-3">
+          <a href="lugares.html" class="link">Lugares</a>
+        </div>
+        <div class="col-3">
+          <a href="" data-toggle="modal" data-target="#registro" id="login"
+              class="link" aria-expanded="false">
+              <i class="fa-solid fa-address-card fa-2x mx-2 my-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content p-5">
+              <div id="alerta" class="alert d-none" role="alert">
+              </div>
+              <div class="row py-2">
+                  <div class="col-10 offset-1">
+                      <h5 class="modal-title text-center moon" id="label">Registrarse</h5>
+                  </div>
+                  <div class="col-1">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+              </div>
+              <p class="text-center moon"></p>
+              <form id="formulario">
+                  <div class="col-10 offset-1 my-2">
+                      <input type="text" id="modalNombre" class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="col-10 offset-1 my-2">
+                      <input type="email" id="modalEmail" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col-10 offset-1 my-2">
+                      <input type="password" id="modalPass" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="text-center my-2">
+                      <button type="submit" id="modalEnviar" class="btn btn-primary luna">Enviar</button>
+                  </div>
+              </form>
+              <div class="text-center mt-2">
+                  <div class="moon">
+                      <p>Registrandote estas aceptando los</p>
+                      <p>Terminos y condiciones de uso</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="contenedor">
+
+      <div class="text-center">
+        <img src="/images/logo.png" class="logo" alt="">
+      </div>
+      
+      <div class="anuncio">
+        <h3 class="py-3">Sal ahí fuera</h3>
+        <ul>
+          <li>
+            <p>Conoce donde puedes salir esta noche, donde cenar en tu próxima cita.</p>
+            <p>Descubre los lugares más cercanos</p>
+            <p><b>Lo mejor de lo mejor</b></p>
+            <p class="verMas"><a href="restaurantes.html">Ver mas</a></p>
+          </li>
+          <li><img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/12/cena-amigos-restaurante-2556623.jpg?tf=3840x" alt=""></li>
+        </ul>
+      </div>
+      <div class="anuncio2">
+        <h3 class="py-3">Vuelve a emocionarte, vuelve a viajar</h3>
+        <ul>
+          <li><img src="https://www.reportur.com/wp-content/uploads/2019/12/emisivas.jpg" class="incio" alt=""></li>
+          <li>
+            <p>¿Quieres una escapada y no sabes donde?</p>
+            <p>Mira los mejores sitios recomendados para ir, y sobretodo por tus gustos</p>
+            <p><b></b></p>
+            <p class="verMas"><a href="lugares.html">Ver mas</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <h2 class="m-4 text-center">Contáctenos</h2>
+    <form id="contactenos">
+      <div class="row align-items-center justify-content-center g-2">
+          <div class="col-10 col-md-5">
+              <input type="text" id="nombreContacto" class="form-control" placeholder="Nombre*">
+          </div>
+          <div class="col-10 col-md-5">
+              <input type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="col-10 col-md-5">
+              <input type="text" class="form-control" placeholder="Movíl">
+          </div>
+          <div class="col-10 col-md-5">
+              <input type="email" id="correo" class="form-control" placeholder="Correo electrónico*">
+          </div>
+
+          <div class="col-10 col-md-10">
+              <div class="form-floating">
+                  <textarea class="form-control" placeholder="Escribe aquí tu mensaje" id="textarea"
+                      style="height: 100px"></textarea>
+                  <label for="textarea">Escribe aquí tu mensaje*</label>
+              </div>
+          </div>
+          <div class="col-10 text-center">
+              <button type="submit" class="btn btn-primary luna py-2 px-4">Enviar</button>
+          </div>
+    </form>
+
+    <footer class="p-2">
+      <div>Pablo García Fernández. Todos los Derechos Reservados</div>
+      <div>Aviso Legal | Politica de Privacidad</div>
+      <div>
+          <a href="https://es-es.facebook.com/" class="link">
+            <i class="fa-brands fa-facebook-f fa-xl mx-2 my-1"></i>
+          </a>
+          <a href="https://twitter.com/" class="link">
+            <i class="fa-brands fa-twitter fa-xl mx-2 my-1"></i>
+          </a>
+          <a href="https://www.youtube.com/" class="link">
+            <i class="fa-brands fa-youtube fa-xl mx-2 my-1"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="link">
+            <i class="fa-brands fa-instagram fa-xl mx-2 my-1 me-2"></i>
+          </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/validacionModal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>
